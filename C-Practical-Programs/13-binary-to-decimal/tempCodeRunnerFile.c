@@ -1,0 +1,1 @@
+digit * pwr(2,power)
