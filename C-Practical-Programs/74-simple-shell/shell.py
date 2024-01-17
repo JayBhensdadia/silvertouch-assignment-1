@@ -1,37 +1,28 @@
 import os
-import sys
 
-def shell():
+def run_command(command):
+    try:
+        # Use os.system() to execute the command
+        os.system(command)
+    except Exception as e:
+        print(f"Error: {e}")
+
+def simple_shell():
     while True:
-        
-        user_input = input("$ ").strip()
+        # Get user input
+        user_input = input("jbshell> ")
 
-        # Exit the shell if the user types 'exit' or 'quit'
-        if user_input.lower() in ['exit', 'quit']:
-            print("Goodbye!")
+        # Check if the user wants to exit
+        if user_input.lower() == 'exit':
+            print("Exiting jbshell.")
             break
 
-        # Split the user input into command and arguments
-        command_args = user_input.split()
+        # Run the command
+        run_command(user_input)
 
-        # Check if any command is entered
-        if not command_args:
-            continue
+if __name__ == "__main__":
+    print("Welcome to jbshell!")
+    print("Type 'exit' to exit the shell.")
 
-        # Get the command and its arguments
-        command = command_args[0]
-        args = command_args[1:]
-
-        # Execute the command
-        try:
-            if command == "cd":
-                # Change directory
-                os.chdir(args[0])
-            else:
-                # Run the command using os.system
-                os.system(user_input)
-        except Exception as e:
-            print(f"Error: {e}")
-
-if name == "__main__":
-    shell()
+    # Run the simple shell
+    simple_shell()
