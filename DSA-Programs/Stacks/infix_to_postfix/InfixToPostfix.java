@@ -5,7 +5,7 @@ import Stacks.stack.Stack;
 public class InfixToPostfix {
     
 
-    //function to return precedence of operators
+    
     static int Prec(char ch) {
         switch (ch) {
         case '+':
@@ -32,16 +32,16 @@ public class InfixToPostfix {
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
 
-            //if scanned character is operand apend it to result
+            
 
             if(Character.isLetterOrDigit(c)){ result+=c; }
             
-            //if scanned character is '(' then push
+            
 
             else if(c=='('){ stack.push(c);}
 
 
-            //if scanned character is ')'
+            
             else if(c==')'){
                 while (stack.getLength()!=0 && stack.get()!='(') {
                     result+=stack.get();

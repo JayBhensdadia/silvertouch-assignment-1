@@ -14,7 +14,7 @@ public class LinkedList {
         this.length = 1;
     }
 
-    //insertion
+
     public void insert(int data) {
         Node temp = tail;
         Node newNode = new Node(data, null);
@@ -25,18 +25,7 @@ public class LinkedList {
 
     public void insert(int data, int index) {
 
-        /*
-         * insert(6,2)
-         * ----------
-         * 1 2 3 4 5
-         * ------------
-         * 0 1 2 3 4
-         * 
-         * 
-         * -------------
-         * 1 2 6 3 4 5
-         * 
-         */
+
 
         int i = 0;
         Node temp = head;
@@ -68,7 +57,7 @@ public class LinkedList {
     }
 
 
-    //deletion
+
     public void delete() {
         Node temp = head;
         while (temp.next != tail) {
@@ -107,7 +96,6 @@ public class LinkedList {
     }
     
 
-    //traversal
     public void printLinkedList() {
         Node temp = head;
         while (temp != null) {
@@ -118,7 +106,6 @@ public class LinkedList {
     }
 
 
-    //get the middle element
     public int getMiddleElement(){
         Node slow = head;
         Node fast = head;
@@ -132,7 +119,7 @@ public class LinkedList {
     }
 
 
-    //reverse linked list
+    
     public static Node reverseLL(Node head){
 
         if(head==null || head.next==null){ return head;}
@@ -145,7 +132,7 @@ public class LinkedList {
 
 
 
-    //detect cycle
+    
     public static boolean detectCycle(Node head){
         Node fast = head;
         Node slow = head;

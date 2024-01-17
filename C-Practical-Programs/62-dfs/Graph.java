@@ -7,7 +7,7 @@ class Graph {
 	private int V;
 
 	
-	// Adjacency List Representation
+	
 	private LinkedList<Integer> adj[];
 
 	
@@ -29,11 +29,11 @@ class Graph {
 	
 	void DFSUtil(int v, boolean visited[])
 	{
-		// Mark the current node as visited and print it
+		
 		visited[v] = true;
 		System.out.print(v + " ");
 
-		// Recur for all the vertices adjacent to this vertex
+		
 		Iterator<Integer> i = adj[v].listIterator();
 		while (i.hasNext()) {
 			int n = i.next();
@@ -67,7 +67,7 @@ class Graph {
 			"Following is Depth First Traversal "
 			+ "(starting from vertex 2)");
 
-		// Function call
+		
 		g.DFS(2);
 	}
 }

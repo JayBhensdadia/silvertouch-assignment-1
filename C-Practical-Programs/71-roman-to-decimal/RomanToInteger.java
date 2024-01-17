@@ -23,10 +23,10 @@ public class RomanToInteger
       
         for (int i = 0; i < s.length(); i++)  
         {  
-            //getting each character of roman numeral and adding it to the variable number  
+            
             number = number + (map.get(s.charAt(i)));  
         }  
-        //prints the corresponding integer value  
+        
         System.out.println("The corresponding Integer value is: "+number);  
 }  
     
