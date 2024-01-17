@@ -2,15 +2,11 @@ package Stacks.eval_postfix;
 
 import Stacks.stack.Stack;
 
-/**
- * EvaluatePostfix
- */
+
 public class EvaluatePostfix {
 
     /*
-     * Iterate the expression from left to right and keep on storing the operands
-     * into a stack. Once an operator is received, pop the two topmost elements and
-     * evaluate them and push the result in the stack again.
+     * Iterate the expression from left to right and keep on storing the operands into a stack. Once an operator is received, pop the two topmost elements and evaluate them and push the result in the stack again.
      */
     public static int eval(String str) {
         Stack stack = new Stack();

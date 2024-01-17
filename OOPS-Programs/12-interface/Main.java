@@ -1,11 +1,11 @@
 
-//drawable interface
+
 interface Drawable{
     public void draw();
 }
 
 
-//Circle class that implements Drawable interface
+
 class Circle implements Drawable{
     @Override
     public void draw() {
@@ -13,7 +13,7 @@ class Circle implements Drawable{
     }
 }
 
-//Rectangle class that implements Drawable interface
+
 class Rectangle implements Drawable{
     @Override
     public void draw() {

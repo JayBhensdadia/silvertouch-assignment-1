@@ -1,4 +1,4 @@
-import javax.swing.event.DocumentEvent;
+
 
 interface Document{
     void print();
